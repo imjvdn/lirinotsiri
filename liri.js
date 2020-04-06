@@ -11,6 +11,7 @@ var spotify = new Spotify({
 });
 
 var defaultMovie = 'Blade';
+
 var action = process.argv[2];
 var value = process.argv[3];
 
@@ -53,7 +54,7 @@ function getBands(artist) {
 
 function getSongs(songName) {
   if (songName === '') {
-    songName = 'Something New';
+    songName = 'Out the hood';
   }
 
   spotify.search({ type: 'track', query: songName }, function (err, data) {
@@ -91,7 +92,7 @@ function getMovies(movieName) {
   if (movieName === 'Blade') {
     console.log('-----------------------');
     console.log(
-      "If you haven't watched 'Blade,' then you should: http://www.imdb.com/title/tt0485947/"
+      "If you haven't watched 'Blade,' then you should: https://www.imdb.com/find?q=blade&ref_=nv_sr_sm"
     );
     console.log("It's on Itunes!");
   }
@@ -102,7 +103,6 @@ function doWhatItSays() {
     data = data.split(',');
     var action = data[0];
     var value = data[1];
-
     switch (action) {
       case 'concert-this':
         getBands(value);
