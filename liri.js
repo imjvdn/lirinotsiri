@@ -52,7 +52,6 @@ function getBands(artist) {
 }
 
 function getSongs(songName) {
-  /
   if (songName === '') {
     songName = 'Something New';
   }
@@ -61,9 +60,9 @@ function getSongs(songName) {
     if (err) {
       return console.log('Error occurred: ' + err);
     }
-    
+
     console.log('Artists: ', data.tracks.items[0].album.artists[0].name);
-    
+
     console.log('Preview Link: ', data.tracks.items[0].preview_url);
 
     console.log('Album Name: ', data.tracks.items[0].album.name);
@@ -71,11 +70,9 @@ function getSongs(songName) {
 }
 
 function getMovies(movieName) {
-  
   axios
     .get('http://www.omdbapi.com/?apikey=42518777&t=' + movieName)
     .then(function (data) {
-      
       var results = `
       Title of the movie: ${data.data.Title}
       Year the movie came out: ${data.data.Year}
