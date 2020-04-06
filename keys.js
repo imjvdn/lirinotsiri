@@ -1,4 +1,4 @@
-console.log('hi');
+console.log('we are running');
 
 var spotify = {
   id: process.env.SPOTIFY_ID,
