@@ -7,6 +7,9 @@ var Spotify = require('node-spotify-api');
 var fs = require('fs');
 var spotify = new Spotify(keys.spotify);
 
+function songInfo(input) {
+  spotify.search({ type: 'track', query: input });
+}
 var defaultMovie = 'Blade';
 
 var action = process.argv[2];

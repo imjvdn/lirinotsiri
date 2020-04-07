@@ -8,18 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bdavis127/liri-node-app.git"
+    "url": "git+https://https://github.com/imjvdn/lirinotsiri"
   },
-  "author": "Brett Davis",
-  "license": "MIT",
+  "author": "Jadan Morrow",
+  "license": "DU",
   "bugs": {
-    "url": "https://github.com/bdavis127/liri-node-app/issues"
+    "url": "https://github.com/imjvdn/lirinotsiri-node-app/issues"
   },
-  "homepage": "https://github.com/bdavis127/liri-node-app#readme",
+  "homepage": "https://github.com/imjvdn/lirinotsiri-node-app#readme",
   "dependencies": {
     "axios": "^0.18.1",
-    "dotenv": "^6.1.0",
+    "dotenv": "^6.2.0",
     "moment": "^2.24.0",
     "node-spotify-api": "^1.1.1"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
