@@ -33,6 +33,15 @@ switch (action) {
     break;
   default:
     break;
+  case 'help':
+    console.log(
+      'Please type one of these commands\n' +
+        "'concert-this': to search your favorite artist concerts\n" +
+        "'spotify-this-song': to search your favorite song\n" +
+        "'movie-this': to search your favorite movie \n" +
+        "'do-what-it-says': using command from random.txt \n"
+    );
+    break;
 }
 function getBands(artist) {
   axios
