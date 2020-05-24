@@ -63,6 +63,8 @@ Gets random text inside a file and does what it says:
 
 `node liri.js do-what-it-says`
 
+LIRI is a command line node app that takes in parameters and gives data in return.
+
 ![](/images/1.jpg)
 ![](/images/2.jpg)
 ![](/images/3.jpg)
