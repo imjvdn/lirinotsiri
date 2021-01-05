@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/imjvdn/lirinotsiri-node-app#readme",
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "chalk": "^4.0.0",
     "dotenv": "^6.2.0",
     "moment": "^2.24.0",
